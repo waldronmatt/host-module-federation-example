@@ -1,8 +1,16 @@
-/*
-  We're loading the whole application with dynamic imports in this entry point.
-  This gives webpack the time needed for the negotiation and loading the shared 
-  libraries (jquery) when the application starts.
-  https://www.angulararchitects.io/aktuelles/the-microfrontend-revolution-module-federation-in-webpack-5/
-*/
+import Heading from "./heading/heading.js";
+import moduleFederation from "./image/module-federation.js";
+import jQueryTest from "./jquery-test/jquery-test";
 
-import("./host-code");
+const heading = new Heading();
+heading.render("HOST (Module Federation)");
+
+const image = new moduleFederation();
+image.render();
+
+import("FormApp/initContactForm").then((initContactFormModule) => {
+  const initContactForm = initContactFormModule.default;
+  initContactForm();
+});
+
+jQueryTest();
