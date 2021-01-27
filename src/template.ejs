@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="<%= htmlWebpackPlugin.options.description %>"
+    />
+    <title><%= htmlWebpackPlugin.options.title %></title>
+  </head>
+  <body>
+    <header></header>
+    <p>
+      By default, you see we have two different jQuery versions running
+      independently.
+    </p>
+    <p>
+      The version above is what the host (this page) is using. The version
+      inside the red border is the version the remote app is using.
+    </p>
+    <p>
+      Open the console. The host has v.2 installed and throws a promise error in
+      the console due to unspported features.
+    </p>
+    <p>
+      The remote has v.3 installed and is successfully outputing to the console:
+      (Failure 1, Success 2).
+    </p>
+    <br />
+    <main></main>
+  </body>
+</html>
