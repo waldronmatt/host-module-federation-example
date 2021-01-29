@@ -8,9 +8,9 @@ heading.render("HOST (Module Federation)");
 const image = new moduleFederation();
 image.render();
 
+jQueryTest();
+
 import("FormApp/initContactForm").then((initContactFormModule) => {
   const initContactForm = initContactFormModule.default;
   initContactForm();
 });
-
-jQueryTest();
