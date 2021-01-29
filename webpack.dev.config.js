@@ -1,12 +1,13 @@
 const path = require("path");
 const chokidar = require("chokidar");
 const webpack = require("webpack");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { ModuleFederationPlugin } = require("webpack").container;
 const deps = require("./package.json").dependencies;
 
 module.exports = {
+  mode: "development",
+  target: "web",
   entry: {
     app: ["./src/bootstrap.js"],
   },
@@ -15,7 +16,6 @@ module.exports = {
     path: path.resolve(__dirname, "./dist"),
     publicPath: "http://localhost:9001/",
   },
-  mode: "development",
   /* 
     hot reloading broken in dev-server, use chokidar instead: 
     https://github.com/webpack/webpack-dev-server/issues/2906
@@ -53,7 +53,6 @@ module.exports = {
     ],
   },
   plugins: [
-    new CleanWebpackPlugin(),
     new webpack.ProvidePlugin({
       $: "jquery",
       jQuery: "jquery",
