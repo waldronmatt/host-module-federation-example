@@ -60,7 +60,7 @@ module.exports = {
         // vendor chunk
         vendor: {
           // name of the chunk
-          name: "vendors-remote",
+          name: "vendors-host",
           // Optimization over Async and Sync Module (a default'ish' setting for chuncks)
           chunks: "all",
           // import file path containing node_modules
