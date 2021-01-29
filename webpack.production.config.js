@@ -17,7 +17,7 @@ module.exports = {
     // specify chunck path for code splitted files
     chunkFilename: "[name].[contenthash:8].js",
     path: path.resolve(__dirname, "./dist"),
-    publicPath: "http://host-module-federation-example.netlify.app/",
+    publicPath: "https://host-module-federation-example.netlify.app/",
   },
   module: {
     rules: [
