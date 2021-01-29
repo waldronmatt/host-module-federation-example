@@ -87,7 +87,7 @@ module.exports = {
     new ModuleFederationPlugin({
       remotes: {
         FormApp:
-          "FormApp@http://remote-module-federation-example.netlify.app/remoteEntry.js",
+          "FormApp@https://remote-module-federation-example.netlify.app/remoteEntry.js",
       },
       /*
         More information on M.F. config settings can be found here:
