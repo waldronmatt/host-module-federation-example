@@ -20,7 +20,7 @@ Run dev environment:
 
         npm run dev
 
-\*\*Build for production (locally):
+**\*\*Build for production (locally):**
 
         npm run build
 
