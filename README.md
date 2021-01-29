@@ -4,6 +4,8 @@
 
 A consumer module federated app. [Click here to see it live on Netlify](https://host-module-federation-example.netlify.app/).
 
+## Introduction
+
 This stand-alone app consumes / 'hosts' the portion of the remote app that is exposed.
 
 Run this project alongside [the remote app](https://github.com/waldronmatt/remote-module-federation-example).
