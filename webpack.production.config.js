@@ -59,7 +59,7 @@ module.exports = {
       cacheGroups: {
         // vendor chunk
         vendor: {
-          // name of the chunk
+          // name of the chunk - make sure name is unqiue to avoid namespace collisions w/ module federation
           name: "vendors-host",
           // Optimization over Async and Sync Module (a default'ish' setting for chuncks)
           chunks: "all",
